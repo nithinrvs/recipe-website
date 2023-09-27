@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable Stir-Fry Recipe</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        .main-recipe-content {
+            margin: 0 100px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+
+        ul, ol {
+            margin-left: 0;
+            padding-left: 20px;
+        }
+
+        #content {
+            display: none; 
+        }
+
+        #toggleButton {
+            background-color: #ec6a52;
+            color: white; /* Text color */
+            padding: 10px 20px; /* Adjust the padding as needed */
+            border: none;
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer;
+        }   
+    </style>
+</head>
+<body>
+    <div class="main-recipe-content">
+        <h1>Vegetable Stir-Fry Recipe</h1>
+        <img src="./img/vegetableStirFry.jpeg" alt="Vegetable Stir-Fry Image">
+        <h2>Ingredients:</h2>
+        <ul>
+            <li>2 cups (240g) mixed vegetables (e.g., bell peppers, broccoli, carrots, snow peas)</li>
+            <li>1/4 cup (60ml) soy sauce</li>
+            <li>2 cloves garlic, minced</li>
+            <li>1 tablespoon ginger, grated</li>
+            <li>2 tablespoons vegetable oil</li>
+            <li>1 teaspoon sesame oil</li>
+            <li>2 cups (400g) cooked rice or noodles</li>
+        </ul>
+
+        <h2>Instructions:</h2>
+        <ol id="content">
+            <li>Heat vegetable oil in a large skillet or wok over medium-high heat.</li>
+            <li>Add minced garlic and grated ginger to the hot oil. Sauté for about 30 seconds until fragrant.</li>
+            <li>Add the mixed vegetables to the skillet and stir-fry for 3-5 minutes until they are tender-crisp.</li>
+            <li>Pour in the soy sauce and sesame oil. Stir well to coat the vegetables evenly.</li>
+            <li>Continue to stir-fry for an additional 2-3 minutes until the sauce thickens slightly.</li>
+            <li>Serve the vegetable stir-fry over cooked rice or noodles. Enjoy!</li>
+        </ol>
+        <button id="toggleButton">Toggle Content</button>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#toggleButton").click(function () {
+                $("#content").toggle();
+            });
+        });
+    </script>
+</body>
+</html>

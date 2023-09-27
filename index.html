@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Recipe Book</title>
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+    <div class="header">
+        <a href="#"> 
+            <h1 onclick="reset_site()">My Recipe Book</h1>
+        </a>
+    </div>
+
+    <div class="navbar">
+        <a href="#" onclick="changeRecipe('./recipe1.html')">Pasta Carbonara</a>
+        <a href="#" onclick="changeRecipe('./recipe2.html')">Chocolate Chip Cookies</a>
+        <a href="#" onclick="changeRecipe('./recipe3.html')">Vegetable Stir-Fry</a>
+    </div>
+
+
+    <iframe id="recipe-iframe" style="width: 0; height: 0;"></iframe>
+
+    <div class="search-bar">
+        <p id="search-bar-txt">Your one-stop page for recipes</p>
+        <p>Search to get detailed information on how to make dishes..</p>
+        <input type="text" placeholder="Search recipes..." style="margin-top: 20px;">
+    </div>
+
+    <div class="about">
+        <div class="about-left">
+            <h2>ABOUT</h2>
+            <p> Our website is your culinary haven, offering a diverse treasure trove of recipes 
+                spanning various cuisines, dietary preferences,and occasions. Whether you're seeking a quick weekday 
+                dinner, exploring seasonal delights, or honing your cooking skills, our website has you covered. Join our vibrant food-loving 
+                community, where you can rate, review, and save your favorite recipes, and even submit your culinary creations. With valuable tips, ingredient 
+                insights, and a dynamic food blog, we're your partner in culinary exploration, committed to making your kitchen adventures both delightful and delicious. 
+                Welcome to a world of flavors, techniques, and inspiration."
+            </p>
+        </div>
+        <div class="about-right">
+            <img src="./img/img2.jpeg" alt="About Image">
+        </div>
+    </div>
+
+    <div class="footer" style="color: black;">
+        <div class="footer-left">
+            <p>&copy; 21MID0038 - R.V.S NITHIN</p>
+            <p>Address: VIT University</p>
+        </div>
+        <div class="footer-right">
+            <h2>Send us a message !</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+                <input class="submit-button" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
